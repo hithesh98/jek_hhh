@@ -96,7 +96,7 @@ body {
   background-size: cover;
 }
 .hero-home {
-  background-image: url(images/Hero.jpg);
+  background-image: url(../images/Hero.jpg);
   background-position: 10% -50%;
 }
 .hero-content {
