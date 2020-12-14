@@ -47,9 +47,16 @@ a img {
 
 /*Global Styles*/
 body {
-  font-family: courier, helvetica, arial; 
+  font-family: courier, helvetica, arial;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
 }
-
+.content-container {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100vh;
+}
 /*Header Style*/
 .header {
   background-color: #000;
@@ -61,9 +68,11 @@ body {
 }
 
 .header-logo {
-  background-color: #000;
   width:15vh;
   height: 10vh;
+}
+.header-logo:hover {
+  background-color: purple;
 }
 .header-logo img{
  width: 1vh; 
@@ -97,7 +106,8 @@ body {
 }
 .hero-home {
   background-image: url(../images/Hero.jpg);
-  background-position: 10% -50%;
+  background-position: 0 10vh;
+
 }
 .hero-content {
   color: #fff;
@@ -107,14 +117,51 @@ body {
   padding-left: 2.5rem;
   transform: translate(0, -50%);
   line-height: 1.5;
+  display: inline-block;
 }
-.hero-content h1 {
-  font-size: 40px;
-  padding-bottom: 8px;
+.hero-type {
+  font-size: 1.5em;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 1.5s steps(20, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid purple;
+  box-sizing: border-box;
+  width: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0%
+  }
+  to {
+    width: 55%
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: purple;
+  }
 }
 /*Footer Style*/
 .footer {
   background-color: #000;
   color: #fff;
-
+  text-align: right;
+  padding: 1em;
 }
+.social-links img {
+  height: 2em;
+  padding: 0.1em;
+  padding-top: 0.5em;
+}
+.footer span {
+  text-decoration: line-through;
+}
+
+/*Opinions Styles*/
