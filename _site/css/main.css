@@ -84,6 +84,7 @@ body {
   float: right;
   margin-right: 10px;
   display: inline-block;
+  padding: 0.5em;
 }
 .header-nav li {
   margin: 10px;
@@ -152,6 +153,7 @@ body {
     border-color: purple;
   }
 }
+
 /*Footer Style*/
 .footer {
   background-color: #000;
@@ -170,4 +172,50 @@ body {
   text-decoration: line-through;
 }
 
+/*Column Style*/
+.col-two {
+  display: flex;
+}
 /*Opinions Styles*/
+.opinion-content {
+  margin-top: 10vh;
+  width: 100%
+}
+.topics {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 15vw;
+}
+.thoughts {
+  flex: 1 1 0;
+}
+
+/*Topics Style*/
+.topics-list {
+  flex: 1;
+}
+.topics-list li{
+  padding: 0.3em;
+}
+
+/*Bookshelf Style*/
+.bookshelf {
+  margin-top: 10vh;
+  text-align: center;
+}
+.book-box {
+  display: inline-block;
+  box-sizing: border-box; 
+  padding: 2%;
+  margin: 3%;
+  width: 20vw;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.book-box img {
+  width: 15vw;
+}
+.book-box p {
+  text-align: center;
+}
