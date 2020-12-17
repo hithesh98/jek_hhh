@@ -99,13 +99,15 @@ body {
 
 /*Hero Style*/
 .full-hero {
+  flex: 1 1 auto;
   height:100vh;
   padding-top: 10vh;
   box-sizing: border-box;
   background-size: cover;
+  width: 100vw;
 }
 .hero-home {
-  background-image: url(/jek_hhh/images/Hero.jpg);
+  background-image: url(../images/Hero.jpg);
   background-position: 0 10vh;
 }
 .hero-content {
