@@ -55,13 +55,16 @@ body {
 .content-container {
   display: flex;
   flex: 1 1 auto;
-  width: 100vh;
+  width: 100%;
+}
+.home {
+  width: 100%;
 }
 /*Header Style*/
 .header {
   background-color: #000;
   color: #fff;
-  width: 100%;
+  width: 100vw;
   z-index: 20;
   height: 10vh;
   position: fixed;
@@ -100,11 +103,11 @@ body {
 /*Hero Style*/
 .full-hero {
   flex: 1 1 auto;
-  height:100vh;
+  height:90vh;
   padding-top: 10vh;
   box-sizing: border-box;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
 }
 .hero-home {
   background-image: url(../images/Hero.jpg);
@@ -155,6 +158,8 @@ body {
   color: #fff;
   text-align: right;
   padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
 }
 .social-links img {
   height: 2em;
