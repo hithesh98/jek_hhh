@@ -224,3 +224,43 @@ body {
 .book-box p {
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  html{
+    padding: 0;
+  }
+
+  /*Hero Styles*/
+  .full-hero {
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-content {
+    width: fit-content;
+    top: 60vh;
+    color: #000;
+  }
+
+  /*Header*/
+  .header-nav {
+    margin-right: 0;
+    padding-top: 2.5vh;
+    padding: 0;
+  }
+  .header-nav a {
+    font-size: 3.23vw;
+  }
+  .header nav {
+    height: 10vh;
+
+  }
+  .header-logo {
+    width: 13vw;
+    height: 9vw;
+    padding-top: 1.5vh;
+  }
+  .header-nav li {
+    margin: 0.7vw;
+    padding-top: 2.5vh;
+  }
+}
